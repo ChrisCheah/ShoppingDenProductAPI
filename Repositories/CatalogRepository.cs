@@ -34,12 +34,14 @@ namespace ShoppingDenProductAPI.Repositories
 
         public Catalog GetCatalogById(long catalogId)
         {
+            var catalog = _dbContext.Catalogs.Include(c => c.ProductList).FirstOrDefault(x => x.CatalogId == catalogId);
             return _dbContext.Catalogs.Find(catalogId);
         }
 
 
         public IEnumerable<Catalog> GetAllCatalogs()
         {
+            var catalogs = _dbContext.Catalogs.Include(catalog => catalog.ProductList).ToList();
             return _dbContext.Catalogs.ToList();
         }
 
