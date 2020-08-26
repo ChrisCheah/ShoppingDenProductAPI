@@ -1,4 +1,4 @@
-# ShoppingDenProductAPI
+﻿# ShoppingDenProductAPI
 
 
 ## Test
@@ -9,7 +9,7 @@ Debug > Start Debugging (F5)
 Use swagger
 https://localhost:32776/swagger/index.html
 
-In  POST ?/api?/Catalog 'Try it out'
+In  POST ​/api​/Catalog 'Try it out'
 
 
 
